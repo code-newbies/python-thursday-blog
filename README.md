@@ -16,6 +16,12 @@ In particular, we hope to:
 ## Getting Started
 
 ### Tech requirements
+
+- Python 3.4+
+- Django 1.8.x
+
+Using virtualenv will make installing the dependencies easier. And it's highly recommended to start using this tool for your projects. See this [link](https://realpython.com/learn/start-django/#setup) under the heading **virtualenv** for a quick explanation.
+
 You'll need to have installed Python 3 to begin. The TL;DR instructions: head to [python.org](https://www.python.org/downloads/), download and install the latest 3.x.x version for your operating system. For more detailed instructions, links are provided below.
 
 - Mac: [here](http://www.diveintopython3.net/installing-python.html#macosx) or [here](http://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python_3/Intro#Mac_users)
@@ -41,6 +47,16 @@ This course from Code School lets you try  git from the browser. It's an easy wa
 We'll be using the Feature Branch Workflow for these projects. This is a great blog post filled with awesome diagrams that show you how it works. Once you've familiarized yourself with git and Github, read through this to see how we'll use it in this collaborative setting.
 
 - **Have more git questions?** If you've gone through the material above and want to walk through git concepts with a real person, send us a note <hello@codenewbie.org> and we'd be happy to setup some time to do it together.
+
+Next, install virtualenv if you would like to use it for the project. [Link](https://virtualenv.pypa.io/en/latest/installation.html)
+
+Finally, to install django and the other dependencies that we'll need to build our app you can use the following:
+
+Note: If you're planning to use virtualenv, be sure to activate the environment for the project before running the setup.
+
+```
+pip install -r /path/to/requirements.txt
+````
 
 ### Skill requirements
 You're welcome to start contributing at any level, but it's helpful to have some knowledge of Python. To get you started, go through one of the following tutorials first.

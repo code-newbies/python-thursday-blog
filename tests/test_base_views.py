@@ -1,6 +1,6 @@
 import pytest
 from big_snake.views import HomeView
 
-class Test_HomeView:
+def test_template_name():
     v = HomeView()
     assert v.template_name == "index.html"

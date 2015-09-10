@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title> {{ title }}</title>
+    <link rel="stylesheet" href="{% static "css/foundation.css" %}">
+</head>
+<body>
+    <section class="row">
+        <header class="large-12 columns">
+            <h1>Welcome to the Python Thursday Blog</h1>
+            <hr>
+        </header>
+    </section>
+    <section>
+        {%  block content  %} {% endblock %}
+    </section>
+</body>
+</html>

@@ -13,3 +13,8 @@ def test_page_loads(browser):
     browser.get('http://localhost:8000')
     assert 'Python Thursday Blog' in browser.title
 
+def test_posts_loads(browser):
+	browser.get('http://localhost:8000')
+	assert 'Python Thursday Blog - Posts' in browser.title
+
+

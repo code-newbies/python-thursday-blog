@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-
 from . import views
 
+
 urlpatterns = [
-    url(r'^$', views.HomeView.as_view(), name='home'),
+    url(r'^$', 'big_snake.views.home', name='home'),
+    url(r'^about/$', 'big_snake.views.about', name='about'),
+    url(r'^post/$', 'big_snake.views.post', name='post'),
+    url(r'^contact/$', 'big_snake.views.contact', name='contact'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include('blog.urls')),
 ]
